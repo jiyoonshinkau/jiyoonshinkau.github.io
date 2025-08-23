@@ -1,95 +1,34 @@
-# Site settings
-title: Jiyoon Shin
-description: >-
-  3D Vision · Medical Imaging · Reliable AI — Research, teaching, and notes.
-lang: ko-KR
-timezone: Asia/Seoul
-image: /assets/img/ogp.png
-# 본인 레포 링크로 바꾸거나 아예 삭제해도 됨
-# repo: https://github.com/jiyoonshin/jiyoonshin.github.io
-mode: dark  # "dark" | "light"
-
-# Profile settings
-author:
-  name: Jiyoon Shin
-  bio: >-
-    Assistant Professor >-
-    Korea Aerospace University
-  username: jiyoonshin
-  github: jiyoonshin
-  # 필요 없으면 비워두기
-  twitter:
-  facebook:
-  email: hello@jiyoonshin.com
-  avatar: /assets/img/avatar.jpg  # 파일 없으면 제거 또는 경로 맞추기
-
-# URL settings
-url: "https://jiyoonshinkau.github.io"
+title: "Jiyoon Shin"
+description: "3D Vision · Medical Imaging · Reliable AI"
+url: "https://jiyoonshin.github.io"
 baseurl: ""
-permalink: /:title/
-google_analytics:
-fb_appid:
-
-# Collection setting
-collections:
-  posts:
-    output: true
-
-# Markdown settings
-markdown: kramdown
-highlighter: rouge
-kramdown:
-  syntax_highlighter: rouge
-
-# Default front matter
-defaults:
-  - scope:
-      path: ""
-    values:
-      layout: post
-      comments: false
-
-# Jekyll Compose default front matter (옵셔널)
-jekyll_compose:
-  post_default_front_matter:
-    modified:
-    tags: []
-    description:
-  draft_default_front_matter:
-    modified:
-    tags: []
-    description:
-
-# Homepage limit posts
-number_of_posts: 5
-
-# Build settings
-# theme: klise  # remote_theme 쓰는 중이면 주석 유지
-sass:
-  style: compressed
-
-include:
-  - _redirects
-  - .htaccess
-
-exclude:
-  - CNAME
-  - Gemfile
-  - Gemfile.lock
-  - LICENSE
-  - CHANGELOG.md
-  - README.md
-  - node_modules
-  - CODE_OF_CONDUCT.md
-  - CONTRIBUTING.md
-  - lighthouse.png
-  - klise-*.gem
-  - klise.gemspec
-
 remote_theme: piharpi/jekyll-klise
 
-# Plugins (GitHub Pages 허용 목록 위주)
 plugins:
   - jekyll-feed
-  - jekyll-sitemap
   - jekyll-seo-tag
+  - jekyll-sitemap
+
+header_pages:
+  - about.md
+  - research.md
+  - publications.md
+  - teaching.md
+
+author:
+  name: "Jiyoon Shin"
+  email: "hello@jiyoonshin.com"
+  github: "jiyoonshin"
+
+lang: ko
+theme_color: auto
+paginate: 6
+show_excerpts: true
+
+markdown: kramdown
+kramdown:
+  input: GFM
+  math_engine: mathjax
+
+google_analytics:
+disqus:
