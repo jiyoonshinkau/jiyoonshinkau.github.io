@@ -23,7 +23,7 @@ author:
   avatar: /assets/img/avatar.jpg  # 파일 없으면 제거 또는 경로 맞추기
 
 # URL settings
-url: "https://jiyoonshin.github.io"
+url: "https://jiyoonshinkau.github.io"
 baseurl: ""
 permalink: /:title/
 google_analytics:
