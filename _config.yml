@@ -1,32 +1,32 @@
 # Site settings
-title: Jiyoon Shin # site title
-description: >- # site description
-  He's writing in Bahasa about web technology and experience as a journal 
-  for documentation things that he learned, meet him <a href="https://github.com/piharpi" target="_blank" rel="noopener">@github</a>.
-lang: en-US # default lang
-timezone: Asia/Jakarta # set your timezone
-image: assets/img/ogp.png # This image used for Open Graph more info https://ogp.me/
-repo: https://github.com/piharpi/jekyll-klise # site repo [optional]
-mode: dark # default theme "dark" | "light"
+title: Jiyoon Shin
+description: >-
+  3D Vision · Medical Imaging · Reliable AI — Research, teaching, and notes.
+lang: ko-KR
+timezone: Asia/Seoul
+image: /assets/img/ogp.png
+# 본인 레포 링크로 바꾸거나 아예 삭제해도 됨
+# repo: https://github.com/jiyoonshin/jiyoonshin.github.io
+mode: dark  # "dark" | "light"
 
 # Profile settings
 author:
-  name: Jekyll Klisé # author name
-  bio: >- # tell to the world
-    The minimalist Jekyll theme, light and dark mode support, for running a personal site and blog, 
-    meet Klisé theme at <a href="https://github.com/piharpi/jekyll-klise" target="_blank" rel="noopener">@github</a>.
-  username: username # general username
-  github: github_username # github username
-  twitter: twitter_username # twitter username
-  facebook: facebook_username # facebook username
-  email: your-email@email.com # email adress
-  avatar: /assets/img/avatar.jpg # change with your own avatar
+  name: Jiyoon Shin
+  bio: >-
+    Assistant Professor (from 2025). Research in 3D Vision, Medical Imaging, and Reliable AI.
+  username: jiyoonshin
+  github: jiyoonshin
+  # 필요 없으면 비워두기
+  twitter:
+  facebook:
+  email: hello@jiyoonshin.com
+  avatar: /assets/img/avatar.jpg  # 파일 없으면 제거 또는 경로 맞추기
 
 # URL settings
-url: "https://jiyoonshin.github.io" #
+url: "https://jiyoonshin.github.io"
 baseurl: ""
 permalink: /:title/
-google_analytics: # leave it blank if not wish
+google_analytics:
 fb_appid:
 
 # Collection setting
@@ -48,7 +48,7 @@ defaults:
       layout: post
       comments: false
 
-# Jekyll Compose default front matter
+# Jekyll Compose default front matter (옵셔널)
 jekyll_compose:
   post_default_front_matter:
     modified:
@@ -63,7 +63,7 @@ jekyll_compose:
 number_of_posts: 5
 
 # Build settings
-# theme: klise
+# theme: klise  # remote_theme 쓰는 중이면 주석 유지
 sass:
   style: compressed
 
@@ -85,12 +85,10 @@ exclude:
   - klise-*.gem
   - klise.gemspec
 
-remote_theme: piharpi/jekyll-klise 
+remote_theme: piharpi/jekyll-klise
 
-# Plugins
+# Plugins (GitHub Pages 허용 목록 위주)
 plugins:
   - jekyll-feed
   - jekyll-sitemap
-  - jekyll-postfiles
   - jekyll-seo-tag
-  
