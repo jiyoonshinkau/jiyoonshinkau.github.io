@@ -85,8 +85,12 @@ exclude:
   - klise-*.gem
   - klise.gemspec
 
+remote_theme: piharpi/jekyll-klise 
+
 # Plugins
 plugins:
   - jekyll-feed
   - jekyll-sitemap
   - jekyll-postfiles
+  - jekyll-seo-tag
+  
