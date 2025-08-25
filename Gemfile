@@ -55,4 +55,4 @@ end
 
 # Windows 호환용 (있어도 무방)
 gem "tzinfo-data", platforms: [:mingw, :mswin, :x64_mingw, :jruby]
-gem "wdm", "~> 0.1.0", platforms: [:mingw, :mswin, :x64_mingw]
+gem "wdm", "~> 0.1.0", platforms: [:mingw, :mswin, :x64_mingw] 
