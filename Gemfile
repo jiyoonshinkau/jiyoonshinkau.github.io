@@ -1,4 +1,4 @@
-source "https://rubygems.org"
+# source "https://rubygems.org"
 
 # Hello! This is where you manage which Jekyll version is used to run.
 # When you want to use a different version, change it below, save the
@@ -8,7 +8,7 @@ source "https://rubygems.org"
 #
 # This will help ensure the proper Jekyll version is running.
 # Happy Jekylling!
-gem "jekyll", "~> 4.1.0"
+# gem "jekyll", "~> 4.1.0"
 
 # This is the default theme for new Jekyll sites. You may change this to anything you like.
 
@@ -17,17 +17,42 @@ gem "jekyll", "~> 4.1.0"
 # gem "github-pages", group: :jekyll_plugins
 
 # If you have any plugins, put them here!
-group :jekyll_plugins do
-  gem 'jekyll-feed', '~> 0.13'
-  gem 'jekyll-sitemap', '~> 1.4'
-  gem 'jekyll-compose', '~> 0.12.0'
-  gem 'jekyll-postfiles', '~> 3.1'
-end
+#group :jekyll_plugins do
+#  gem 'jekyll-feed', '~> 0.13'
+#  gem 'jekyll-sitemap', '~> 1.4'
+#  gem 'jekyll-compose', '~> 0.12.0'
+#  gem 'jekyll-postfiles', '~> 3.1'
+#end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
-gem "tzinfo-data", platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+#gem "tzinfo-data", platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 # Performance-booster for watching directories on Windows
-gem "wdm", "~> 0.1.0" if Gem.win_platform?
+#gem "wdm", "~> 0.1.0" if Gem.win_platform?
 
-gem "webrick", "~> 1.7"
+#gem "webrick", "~> 1.7"
+
+
+
+
+source "https://rubygems.org"
+
+# GitHub Pages가 지원/고정하는 Jekyll & 플러그인 세트
+gem "github-pages", group: :jekyll_plugins
+
+# GitHub Pages에서 허용되는 플러그인만 남기기
+group :jekyll_plugins do
+  gem "jekyll-feed"
+  gem "jekyll-seo-tag"
+  gem "jekyll-sitemap"
+end
+
+# 로컬 개발 전용(서버 실행/포스트 생성 등)
+group :development do
+  gem "webrick", "~> 1.8"   # <= 끝에 따옴표 하나만! (이전의 "" 오타 제거)
+  gem "jekyll-compose", "~> 0.12.0"
+end
+
+# Windows 호환용 (있어도 무방)
+gem "tzinfo-data", platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+gem "wdm", "~> 0.1.0", platforms: [:mingw, :mswin, :x64_mingw]
