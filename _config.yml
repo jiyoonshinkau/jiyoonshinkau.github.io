@@ -8,7 +8,7 @@ plugins:
   - jekyll-feed
   - jekyll-seo-tag
   - jekyll-sitemap
-  - jekyll-remote-theme 
+#  - jekyll-remote-theme 
 
 header_pages:
   - about.md
