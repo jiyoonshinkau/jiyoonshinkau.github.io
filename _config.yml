@@ -2,13 +2,14 @@ title: "Jiyoon Shin"
 description: "3D Vision · Medical Imaging · Reliable AI"
 url: "https://jiyoonshinkau.github.io"
 baseurl: ""
+theme: null 
 remote_theme: piharpi/jekyll-klise
 
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
   - jekyll-sitemap
-#  - jekyll-remote-theme 
+  - jekyll-remote-theme 
 
 header_pages:
   - about.md
