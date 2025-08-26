@@ -33,26 +33,3 @@
 #gem "webrick", "~> 1.7"
 
 
-
-
-source "https://rubygems.org"
-
-# GitHub Pages가 지원/고정하는 Jekyll & 플러그인 세트
-gem "github-pages", group: :jekyll_plugins
-
-# GitHub Pages에서 허용되는 플러그인만 남기기
-group :jekyll_plugins do
-  gem "jekyll-feed"
-  gem "jekyll-seo-tag"
-  gem "jekyll-sitemap"
-end
-
-# 로컬 개발 전용(서버 실행/포스트 생성 등)
-group :development do
-  gem "webrick", "~> 1.8"   # <= 끝에 따옴표 하나만! (이전의 "" 오타 제거)
-  gem "jekyll-compose", "~> 0.12.0"
-end
-
-# Windows 호환용 (있어도 무방)
-gem "tzinfo-data", platforms: [:mingw, :mswin, :x64_mingw, :jruby]
-gem "wdm", "~> 0.1.0", platforms: [:mingw, :mswin, :x64_mingw] 
